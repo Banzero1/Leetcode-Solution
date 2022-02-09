@@ -1,3 +1,7 @@
+
+//TC - O(logN)
+//SC - O(1)
+
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
