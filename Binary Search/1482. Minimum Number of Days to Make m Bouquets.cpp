@@ -2,6 +2,10 @@ class Solution {
 public:
     int minDays(vector<int>& bloomDay, int m, int k) {
         
+/*
+Time O(Nlog(max(A[i])))
+Space O(1)
+*/
         
         long long int i,j,l,r,mid,n=bloomDay.size(),adjacentday,totalbouqets;
      
@@ -50,12 +54,3 @@ public:
         return l;
     }
 };
-
-/*
-
-Time O(Nlog(max(A[i])))
-Space O(1)
-
-
-
-*/
