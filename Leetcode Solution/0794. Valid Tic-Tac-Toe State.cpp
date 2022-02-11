@@ -42,8 +42,7 @@ public:
        
         if((xwin&&turn!=1)||(owin&&turn!=0))
         {
-           
-            return false;
+           return false;
         }
         
         return turn==1||turn==0;
