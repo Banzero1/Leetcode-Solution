@@ -15,7 +15,7 @@ public:
                     turn++;
                     col[j]++;
                     if(i==j)
-                    {dig++;}
+                    {dig++; }
                     if(i+j==2)
                     {antidig++;}
                 }
@@ -25,9 +25,9 @@ public:
                     turn--;
                     col[j]--;
                   if(i==j)
-                    {dig--;}
-                    if(i+j==2)
-                    {antidig--;}
+                   {dig--;}
+                  if(i+j==2)
+                   {antidig--;}
                 }
             }
         }
