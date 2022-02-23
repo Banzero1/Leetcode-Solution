@@ -2,7 +2,7 @@ class Solution {
 public:
     long long countPairs(vector<int>& nums, int k) {
         
-      // unordered_map<long long,int>m,m1;
+     
        long long i,n=nums.size(),x=k,j,p,xx,ans=0;
         vector<long long>m(1e5+5,0),m1(1e5+5,0),m2(1e5+5,0),m3(1e5+5,0);
         
@@ -33,7 +33,7 @@ public:
         }
         
         m3[1]=n;
-      //  cout<<m2[2]<<m2[4]<<endl;
+  
         for(i=0;i<n;i++)
         {
             x=k;
@@ -58,7 +58,7 @@ public:
             {
                 ans--;
             }
-           // cout<<x<<" "<<m3[x]<<endl;
+          
         }
         
         return ans/2;
