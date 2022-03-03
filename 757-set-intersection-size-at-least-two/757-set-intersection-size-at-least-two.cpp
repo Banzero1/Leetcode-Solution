@@ -52,7 +52,7 @@ public:
                 
             }
             
-            cout<<v[i][0]<<" "<<v[i][1]<<" "<<ans<<endl;
+           // cout<<v[i][0]<<" "<<v[i][1]<<" "<<ans<<endl;
         }
         
         
