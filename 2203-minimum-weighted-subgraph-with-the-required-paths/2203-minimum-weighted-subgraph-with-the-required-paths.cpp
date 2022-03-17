@@ -36,3 +36,9 @@ public:
         return ans >= 1e11 ? -1 : ans;
     }
 };
+
+/*
+// Time: O(ElogE + N)
+// Space: O(E)
+
+*/
