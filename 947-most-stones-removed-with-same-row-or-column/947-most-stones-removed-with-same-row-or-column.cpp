@@ -49,15 +49,7 @@ public:
             }
         }
         
-        /*
-        for(i=0;i<n;i++)
-        {
-            if(parent[i]==i)
-            {
-                c++;
-            }
-        }
-        */
+      
         return u.c;
         
     }
