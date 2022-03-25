@@ -48,8 +48,8 @@ public:
         return dp[i][prev_i+1] = max(take, dontTake);
     }
 };
-Time Complexity : O(N2)
-Space Complexity : O(N2)
+Time Complexity : O(N^2)
+Space Complexity : O(N^2)
 
 
 */
