@@ -24,7 +24,7 @@ public:
                 c++;
                 right=pairs[i][1];
             }
-            cout<<pairs[i][1]<<endl;
+         
         }
         
         
