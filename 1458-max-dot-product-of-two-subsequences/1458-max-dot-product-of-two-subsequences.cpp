@@ -17,7 +17,7 @@ public:
         
         ans=dfs(A,B,n,m,i+1,j,dp);
         ans=max(ans,dfs(A,B,n,m,i,j+1,dp));
-        ans=max(ans,dfs(A,B,n,m,i+1,j+1,dp));
+        
         ans=max(ans,A[i]*B[j]+(dfs(A,B,n,m,i+1,j+1,dp)<0?0:dfs(A,B,n,m,i+1,j+1,dp)));
         
         return dp[i][j]=ans;
