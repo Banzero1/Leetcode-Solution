@@ -11,7 +11,7 @@ public:
         
         if(c>n)
         {
-            //cout<<c;
+            
             return 1e5;
         }
         
@@ -24,7 +24,7 @@ public:
         ans=2+dfs(n,2*c,c,dp);
         ans=min(ans,1+dfs(n,c+x,x,dp));
         
-        cout<<ans<<endl;
+      
         return dp[c][x]=ans;
     }
     
