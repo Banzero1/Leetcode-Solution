@@ -28,11 +28,11 @@ public:
         }
         
         
-       // cout<<pre<<s<<endl;
+       
         ans=(((pre>0?pre:0)+(s>0?s:0))%mod+ans%mod)%mod;
         s=0;
         c=0;
-        //cout<<ans;
+      
         for(int j=0;j<2&&j<k;j++){
         for(i=0;i<n;i++)
         {
@@ -42,9 +42,9 @@ public:
             c%=mod;
             s%=mod;
         }
-       //     cout<<c<<j<<endl;
+      
     }
-       // cout<<s<<endl;
+      
         
         if(k==1)
         {
