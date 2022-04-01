@@ -2,13 +2,7 @@ class Solution {
 public:
 	vector<vector<int>> dp;
 	vector<vector<int>> dp1;
-	bool isPalindrome(string& s, int i, int j) {
-		if (i >= j) return true;
-		if (dp1[i][j] != -1) return dp1[i][j];
-		if (s[i] == s[j]) return dp1[i][j] = isPalindrome(s, i + 1, j - 1);
-		return dp1[i][j] = false;
-	}
-
+	
 	int solve(string s, int l, int r){
 		if(l>=r) return dp[l][r] = 0;
 		if(dp[l][r]!=-1) return dp[l][r];
