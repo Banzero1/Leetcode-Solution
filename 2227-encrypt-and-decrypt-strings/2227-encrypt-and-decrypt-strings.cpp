@@ -1,58 +1,25 @@
 class Encrypter {
+    map<char,string> kmap;
+    map<string,int> rmap;
 public:
-    unordered_map<char,string>m;
-    vector<string>v1;
-    Encrypter(vector<char>& k, vector<string>& v, vector<string>& d) {
-        
-        int i,n=v.size();
-        for(i=0;i<n;i++)
-        {
-            m[k[i]]=v[i];
+    Encrypter(vector<char>& keys, vector<string>& values, vector<string>& dic) {
+        int n = keys.size();
+        for(int i  = 0 ; i < n ; i++){
+            kmap[keys[i]] = values[i];
         }
-     
-        for(i=0;i<d.size();i++)
-        {
-            v1.push_back(d[i]);
+        for(auto x : dic){
+            rmap[encrypt(x)]++;
         }
-    
     }
     
-    string encrypt(string w) {
-      
-        int i,n=w.size();
-        string s;
-        for(i=0;i<n;i++)
-        {
-            s+=m[w[i]];
+    string encrypt(string word1) {
+        string ans = "";
+        for(auto x : word1){
+            ans += kmap[x];
         }
-        return s;
-        
-    }
-    
-    int decrypt(string w) {
-        
-        int i,n=w.size(),ans=0;
-     
-        for(i=0;i<v1.size();i++)
-        {
-            string s="";
-            for(int j=0;j<v1[i].size();j++)
-            {
-                s+=m[v1[i][j]];
-            }
-          
-           
-                ans+=s==w;
-            
-        }
-        
         return ans;
     }
+    int decrypt(string word2) {
+        return rmap[word2];
+    }
 };
-
-/**
- * Your Encrypter object will be instantiated and called as such:
- * Encrypter* obj = new Encrypter(keys, values, dictionary);
- * string param_1 = obj->encrypt(word1);
- * int param_2 = obj->decrypt(word2);
- */
